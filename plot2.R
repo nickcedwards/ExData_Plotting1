@@ -16,6 +16,6 @@ get_data <- function() {
 }
 
 data <- get_data()
-plot(data$datetime~data$Global_active_power,main="", ylab="Global Active Power (kilowatts)") 
+plot(data$datetime,data$Global_active_power,main="", ylab="Global Active Power (kilowatts)", xlab="", type="l")
 dev.copy(png,'plot2.png', width=480, height=480, bg = "white")
 dev.off()
